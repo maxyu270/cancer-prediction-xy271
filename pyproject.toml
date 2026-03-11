@@ -1,0 +1,32 @@
+[project]
+name = "cancer-prediction-xy271"
+description = "A basic model to predict cancerous tumors based on certain properties."
+authors = [{name = "Xinming Yu"}]
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.3.1",
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.3",
+    "pandas>=3.0.1",
+    "scikit-learn>=1.8.0",
+    "streamlit>=1.19.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=26.3.0",
+    "flake8>=7.3.0",
+    "isort>=8.0.1",
+]
+[project.scripts]
+cancer-prediction = "cancer_prediction_xy271.scripts.app:cli"
+train = "cancer_prediction_xy271.scripts.app:train"
+
+[build-system]
+requires = ["uv_build>=0.9.5,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = true
