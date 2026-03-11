@@ -19,6 +19,8 @@ dev = [
     "black>=26.3.0",
     "flake8>=7.3.0",
     "isort>=8.0.1",
+    "mkdocs>=1.6.1",
+    "mkdocstrings[python]>=1.0.3",
 ]
 [project.scripts]
 cancer-prediction = "cancer_prediction_xy271.scripts.app:cli"

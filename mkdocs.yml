@@ -1,0 +1,13 @@
+site_name: Cancer Prediction
+site_url: https://github.com/maxyu270/cancer-prediction-xy271
+repo_url: https://github.com/maxyu270/cancer-prediction-xy271
+nav:
+  - Home: index.md
+  - cancer-prediction:
+    - cancer model: cancer-prediction-xy271/cancer_model.md
+    - streamlit app: cancer-prediction-xy271/streamlit_app.md
+theme: readthedocs
+plugins:
+  - mkdocstrings
+watch:
+  - .  # reload docs for file changes
